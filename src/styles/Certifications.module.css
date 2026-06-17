@@ -1,0 +1,22 @@
+.section { padding: 96px 0; position: relative; z-index: 1; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.blockLabel { font-family: var(--mono); font-size: 11.5px; font-weight: 600; color: var(--text3); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 22px; }
+.certList { display: flex; flex-direction: column; gap: 10px; }
+.certCard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px 22px; transition: border-color 0.22s ease; }
+.certCard:hover { border-color: var(--border2); }
+.certDomain { font-family: var(--mono); font-size: 10px; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; }
+.certTitle { font-size: 14px; font-weight: 500; color: var(--text); line-height: 1.45; }
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before { content: ''; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(180deg, var(--gold) 0%, var(--border2) 40%, var(--border) 100%); }
+.timelineItem { position: relative; margin-bottom: 30px; }
+.timelineItem:last-child { margin-bottom: 0; }
+.dot { position: absolute; left: -23px; top: 5px; width: 10px; height: 10px; border-radius: 50%; background: var(--bg); border: 1.5px solid var(--border2); transition: border-color 0.2s ease; }
+.dotActive { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212, 172, 90, 0.12); }
+.timelineItem:hover .dot { border-color: var(--text3); }
+.period { font-family: var(--mono); font-size: 10px; color: var(--text4); letter-spacing: 0.1em; margin-bottom: 5px; }
+.degree { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 3px; line-height: 1.4; }
+.school { font-size: 12.5px; color: var(--text3); font-weight: 300; }
+.badge { display: inline-block; margin-top: 6px; font-family: var(--mono); font-size: 10px; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.08em; }
+.badgeActive { background: rgba(212, 172, 90, 0.1); color: var(--gold); border: 1px solid rgba(212, 172, 90, 0.2); }
+.badgeDone { background: var(--surface2); color: var(--text4); border: 1px solid var(--border); }
+@media (max-width: 768px) { .columns { grid-template-columns: 1fr; gap: 44px; } }
