@@ -82,19 +82,6 @@ aws-cloud-resume-challenge/
 └── README.md
 ```
 
-## Screenshots
-
-**Hero section**
-(Add screenshot here)
-
-**Skills section**
-(Add screenshot here)
-
-**Projects section**
-(Add screenshot here)
-
-**Mobile view**
-(Add screenshot here)
 
 ## Planned AWS Architecture
 
