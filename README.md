@@ -4,6 +4,11 @@ This is my take on the AWS Cloud Resume Challenge — a personal portfolio site 
 
 Right now it's a React frontend. The cloud architecture is the next phase — S3, CloudFront, Lambda, DynamoDB, the whole deal. Building it piece by piece instead of dumping everything at once.
 
+## Live Demo
+
+https://ansh-maheshwari.netlify.app
+
+
 ## What's on the site
 
 - A portfolio/resume hub with my projects, skills, and certs
