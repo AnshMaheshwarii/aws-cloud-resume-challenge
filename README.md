@@ -1,79 +1,156 @@
-# Ansh Maheshwari — Portfolio
+# AWS Cloud Resume Challenge
 
-Personal portfolio website for a Cloud, DevOps & Cybersecurity engineer.
+A personal portfolio website built as part of the AWS Cloud Resume Challenge. The project showcases my background in cloud computing, DevOps, networking, and cybersecurity, along with hands-on experience in modern frontend development.
+
+## Overview
+
+The site functions as an online resume and portfolio, including:
+
+- Portfolio website with responsive layout for desktop and mobile
+- Skills and certifications section
+- Project showcase
+- Downloadable resume
+- Contact and social links
+- Visitor counter (planned)
+- Cloud-native deployment architecture (planned)
+
+## Features
+
+**Portfolio website**
+- Dark-themed UI
+- Responsive design
+- Smooth scrolling navigation
+- Interactive project cards
+
+**Skills showcase**
+- Cloud technologies
+- DevOps tools
+- Networking concepts
+- Programming languages/frameworks
+
+**Certifications & education**
+- AWS Certified Solutions Architect – Associate
+- CCNA 200-301
+- Cyber Security Expert
+- Academic background
+
+**Projects**
+- Zenith Edge – cloud-based client management platform
+- AWS Cloud Resume Challenge (this project)
+- CI/CD pipeline automation project
+
+**Contact**
+- Email
+- GitHub
+- LinkedIn
+- Instagram
+- Phone number
 
 ## Tech Stack
 
-- **React 18** + **Vite 5**
-- **CSS Modules** — scoped per-component styles
-- **Font Awesome 6** — brand & UI icons
-- **Geist** — font (loaded from Google Fonts)
-- **AWS Lambda + DynamoDB** — serverless visitor counter (backend)
+**Frontend**
+- React 18
+- Vite 5
+- JavaScript
+- CSS Modules
+- Font Awesome
 
-## Getting Started
-
-```bash
-# Install dependencies
-npm install
-
-# Start dev server at http://localhost:3000
-npm run dev
-
-# Production build
-npm run build
-
-# Preview production build locally
-npm run preview
-```
+**Cloud & DevOps (planned)**
+- AWS S3
+- AWS CloudFront
+- AWS Route 53
+- AWS Lambda
+- AWS DynamoDB
+- AWS API Gateway
+- GitHub Actions
 
 ## Project Structure
 
-```
-portfolio/
-├── index.html
-├── vite.config.js
-├── package.json
+```text
+aws-cloud-resume-challenge/
+│
 ├── public/
-│   ├── favicon.svg
-│   └── resume.pdf          ← add your resume here
-└── src/
-    ├── main.jsx
-    ├── App.jsx
-    ├── components/
-    │   ├── Background.jsx   ← animated canvas nodes
-    │   ├── Navbar.jsx
-    │   ├── Hero.jsx
-    │   ├── About.jsx
-    │   ├── Skills.jsx
-    │   ├── Certifications.jsx
-    │   ├── Projects.jsx
-    │   ├── Contact.jsx
-    │   └── Footer.jsx
-    └── styles/
-        ├── global.css       ← design tokens + shared helpers
-        ├── Background.module.css
-        ├── Navbar.module.css
-        ├── Hero.module.css
-        ├── About.module.css
-        ├── Skills.module.css
-        ├── Certifications.module.css
-        ├── Projects.module.css
-        ├── Contact.module.css
-        └── Footer.module.css
+├── src/
+│   ├── components/
+│   ├── styles/
+│   └── main.jsx
+│
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── index.html
+└── README.md
 ```
 
-## Customisation Checklist
+## Screenshots
 
-1. **Resume** — place your PDF at `public/resume.pdf`
-2. **Contact links** — update `src/components/Contact.jsx` with real URLs
-3. **Project links** — update GitHub & demo URLs in `src/components/Projects.jsx`
-4. **Visitor counter** — set `VISITOR_API` in `src/components/Footer.jsx` to your Lambda endpoint
-5. **Social links** in `src/components/Navbar.jsx` and `Hero.jsx`
+**Hero section**
+(Add screenshot here)
 
-## Deployment (AWS Cloud Resume Challenge)
+**Skills section**
+(Add screenshot here)
 
+**Projects section**
+(Add screenshot here)
+
+**Mobile view**
+(Add screenshot here)
+
+## Planned AWS Architecture
+
+```text
+User
+  │
+  ▼
+CloudFront
+  │
+  ▼
+S3 Portfolio Website
+  │
+  ▼
+API Gateway
+  │
+  ▼
+AWS Lambda
+  │
+  ▼
+DynamoDB
 ```
-S3 (static hosting) → CloudFront (CDN) → Route 53 (custom domain)
-CI/CD: GitHub Actions → build → sync to S3 → invalidate CloudFront
-Visitor counter: API Gateway → Lambda (Python) → DynamoDB
+
+## Local Development
+
+Install dependencies:
+```bash
+npm install
 ```
+
+Run the development server:
+```bash
+npm run dev
+```
+
+Create a production build:
+```bash
+npm run build
+```
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+## Future Improvements
+
+- Host on AWS S3
+- CloudFront CDN integration
+- Custom domain via Route 53
+- Visitor counter using Lambda and DynamoDB
+- CI/CD pipeline using GitHub Actions
+- Infrastructure as Code with Terraform
+- Improved monitoring and logging
+
+## Author
+
+**Ansh Maheshwari**
+Cloud | DevOps | Cybersecurity
+GitHub: [https://github.com/AnshMaheshwarii](https://github.com/AnshMaheshwarii)
