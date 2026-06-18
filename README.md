@@ -1,143 +1,86 @@
 # AWS Cloud Resume Challenge
 
-A personal portfolio website built as part of the AWS Cloud Resume Challenge. The project showcases my background in cloud computing, DevOps, networking, and cybersecurity, along with hands-on experience in modern frontend development.
+This is my take on the AWS Cloud Resume Challenge — a personal portfolio site that doubles as a resume and a way to actually show (not just tell) what I'm learning in cloud, DevOps, networking, and security.
 
-## Overview
+Right now it's a React frontend. The cloud architecture is the next phase — S3, CloudFront, Lambda, DynamoDB, the whole deal. Building it piece by piece instead of dumping everything at once.
 
-The site functions as an online resume and portfolio, including:
+## What's on the site
 
-- Portfolio website with responsive layout for desktop and mobile
-- Skills and certifications section
-- Project showcase
+- A portfolio/resume hub with my projects, skills, and certs
+- Responsive layout — works on phone and desktop
 - Downloadable resume
-- Contact and social links
-- Visitor counter (planned)
-- Cloud-native deployment architecture (planned)
+- Contact links (email, GitHub, LinkedIn, etc.)
+- Visitor counter and full cloud backend — coming soon
 
-## Features
+## Stack
 
-**Portfolio website**
-- Dark-themed UI
-- Responsive design
-- Smooth scrolling navigation
-- Interactive project cards
+**Frontend (live)**
+- React 18 + Vite 5
+- Plain JS, CSS Modules
+- Font Awesome for icons
 
-**Skills showcase**
-- Cloud technologies
-- DevOps tools
-- Networking concepts
-- Programming languages/frameworks
+**Cloud/DevOps (in progress)**
+- S3 for hosting
+- CloudFront for CDN
+- Route 53 for the custom domain
+- Lambda + API Gateway + DynamoDB for the visitor counter
+- GitHub Actions for CI/CD
 
-**Certifications & education**
+## Certifications
+
 - AWS Certified Solutions Architect – Associate
 - CCNA 200-301
 - Cyber Security Expert
-- Academic background
 
-**Projects**
-- Zenith Edge – cloud-based client management platform
-- AWS Cloud Resume Challenge (this project)
-- CI/CD pipeline automation project
+## A few things I've built
 
-**Contact**
-- Email
-- GitHub
-- LinkedIn
-- Instagram
-- Phone number
+- **Zenith Edge** — a cloud-based client management platform
+- **This site** — AWS Cloud Resume Challenge
+- A small CI/CD pipeline automation project
 
-## Tech Stack
-
-**Frontend**
-- React 18
-- Vite 5
-- JavaScript
-- CSS Modules
-- Font Awesome
-
-**Cloud & DevOps (planned)**
-- AWS S3
-- AWS CloudFront
-- AWS Route 53
-- AWS Lambda
-- AWS DynamoDB
-- AWS API Gateway
-- GitHub Actions
-
-## Project Structure
+## Project structure
 
 ```text
 aws-cloud-resume-challenge/
-│
 ├── public/
 ├── src/
 │   ├── components/
 │   ├── styles/
 │   └── main.jsx
-│
 ├── package.json
-├── package-lock.json
 ├── vite.config.js
 ├── index.html
 └── README.md
 ```
 
-
-## Planned AWS Architecture
+## Architecture (planned)
 
 ```text
-User
-  │
-  ▼
-CloudFront
-  │
-  ▼
-S3 Portfolio Website
-  │
-  ▼
-API Gateway
-  │
-  ▼
-AWS Lambda
-  │
-  ▼
-DynamoDB
+User → CloudFront → S3 (site) → API Gateway → Lambda → DynamoDB
 ```
 
-## Local Development
+Pretty standard serverless setup for this kind of challenge, nothing fancy — just trying to actually understand each piece instead of copy-pasting a Terraform template.
 
-Install dependencies:
+## Running it locally
+
 ```bash
-npm install
+npm install      # install deps
+npm run dev       # start dev server
+npm run build     # production build
+npm run preview   # preview the build
 ```
 
-Run the development server:
-```bash
-npm run dev
-```
+## What's next
 
-Create a production build:
-```bash
-npm run build
-```
+- [ ] Deploy to S3 + CloudFront
+- [ ] Hook up a custom domain via Route 53
+- [ ] Build the visitor counter (Lambda + DynamoDB)
+- [ ] CI/CD with GitHub Actions
+- [ ] Terraform for IaC
+- [ ] Better logging/monitoring once it's live
 
-Preview the production build:
-```bash
-npm run preview
-```
+## About me
 
-## Future Improvements
+**Ansh Maheshwari** — into cloud, DevOps, and security, learning by building stuff like this instead of just reading docs.
 
-- Host on AWS S3
-- CloudFront CDN integration
-- Custom domain via Route 53
-- Visitor counter using Lambda and DynamoDB
-- CI/CD pipeline using GitHub Actions
-- Infrastructure as Code with Terraform
-- Improved monitoring and logging
-
-## Author
-
-**Ansh Maheshwari**
-Cloud | DevOps | Cybersecurity
-GitHub: [https://github.com/AnshMaheshwarii](https://github.com/AnshMaheshwarii)
+GitHub: [github.com/AnshMaheshwarii](https://github.com/AnshMaheshwarii)
