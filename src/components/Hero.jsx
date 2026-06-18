@@ -35,7 +35,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/AnshMaheshwarii"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline"

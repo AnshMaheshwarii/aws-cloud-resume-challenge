@@ -8,8 +8,8 @@ const PROJECTS = [
     subtitle: 'Cloud-Based Client Management Platform',
     desc: 'A cloud-native client management platform built on AWS, enabling organisations to manage client data, automate workflows, and monitor usage in real time. Designed with multi-region failover, IAM role-based access, and a serverless backend for zero-maintenance scaling.',
     stack: ['AWS', 'React', 'Lambda', 'DynamoDB', 'CloudFront', 'GitHub Actions'],
-    github: 'https://github.com/yourusername/zenith-edge',
-    demo:   'https://zenith-edge.example.com',
+    github: 'https://github.com/AnshMaheshwarii/zenith-edge',
+    demo:   'https://zenith-edge.netlify.app/',
   },
   {
     num: '02 — Cloud Resume',
@@ -17,8 +17,8 @@ const PROJECTS = [
     subtitle: 'Full-Stack Serverless Resume on AWS',
     desc: 'Full-stack resume deployed on AWS — S3 static hosting, CloudFront CDN distribution, a serverless visitor counter via Lambda and DynamoDB, and automated CI/CD deployment through GitHub Actions. Infrastructure managed entirely with Terraform.',
     stack: ['S3', 'CloudFront', 'Lambda', 'DynamoDB', 'Terraform', 'GitHub Actions', 'React'],
-    github: 'https://github.com/yourusername/cloud-resume',
-    demo:   'https://resume.example.com',
+    github: 'https://github.com/AnshMaheshwarii/aws-cloud-resume-challenge',
+    demo:   'https://ansh-maheshwari.netlify.app/',
   },
   {
     num: '03 — Automation',
@@ -26,7 +26,7 @@ const PROJECTS = [
     subtitle: 'End-to-End DevOps Pipeline with Jenkins & Docker',
     desc: 'End-to-end CI/CD pipeline using Jenkins, Docker, and Terraform. Automates build, test, containerisation, and deployment of a Python microservice to AWS ECS Fargate. Integrated static analysis, container image scanning, and Slack alerts for deployment events. All infrastructure defined as code.',
     stack: ['Jenkins', 'Docker', 'Terraform', 'Python', 'ECS Fargate', 'GitHub'],
-    github: 'https://github.com/yourusername/cicd-pipeline',
+    github: 'https://github.com/AnshMaheshwarii/cicd-pipeline',
     demo:   'https://pipeline.example.com',
   },
 ]
