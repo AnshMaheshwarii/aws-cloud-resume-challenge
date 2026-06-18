@@ -20,7 +20,7 @@ export default function Hero() {
 
         <p className={`${styles.desc} ${styles.fadeUp} ${styles.d4}`}>
           Building cloud-native solutions with AWS,<br />
-          automation and modern infrastructure.
+          automation and scalable infrastructure.
         </p>
 
         <div className={`${styles.buttons} ${styles.fadeUp} ${styles.d5}`}>
