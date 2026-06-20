@@ -1,6 +1,6 @@
 # AWS Cloud Resume Challenge
 
-My personal portfolio site, built for the AWS Cloud Resume Challenge — showing what I'm learning in cloud, DevOps, networking, and security.
+My personal portfolio site, built for the AWS Cloud Resume Challenge showing what I'm learning in cloud, DevOps, networking, and security.
 
 The frontend is React, deployed through Netlify, with a live serverless backend on AWS — S3, CloudFront, API Gateway, Lambda, and DynamoDB are all wired up and running the visitor counter.
 
