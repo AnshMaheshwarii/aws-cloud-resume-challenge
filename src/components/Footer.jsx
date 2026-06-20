@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import styles from '../styles/Footer.module.css'
 
 // Replace this with your deployed Lambda API Gateway URL
-const VISITOR_API = 'https://YOUR_API_ENDPOINT/visitors'
+const VISITOR_API =
+'https://ji3p0wngwc.execute-api.ap-south-1.amazonaws.com/prod/visitor-count'
 
 export default function Footer() {
   const [visitors, setVisitors] = useState(null)   // null = loading, string = done
