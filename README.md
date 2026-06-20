@@ -7,7 +7,7 @@ The frontend is React, deployed through Netlify, with a live serverless backend 
 **Live site:** [ansh-maheshwari.netlify.app](https://ansh-maheshwari.netlify.app/)
 **Repo:** [github.com/AnshMaheshwarii/aws-cloud-resume-challenge](https://github.com/AnshMaheshwarii/aws-cloud-resume-challenge)
 
-> Note: the whole thing was actually built and tested on AWS, but I'm not keeping every resource deployed permanently — gotta watch the Free Tier usage. Screenshots of the full infra and the testing are in the repo if you want proof it works.
+> Note: the whole thing was actually built and tested on AWS, but I'm not keeping every resource deployed permanently gotta watch the Free Tier usage. Screenshots of the full infra and the testing are in the repo if you want proof it works.
 
 ## What's on the site
 
