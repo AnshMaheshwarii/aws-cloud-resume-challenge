@@ -1,13 +1,13 @@
 # AWS Cloud Resume Challenge
 
-This is my take on the AWS Cloud Resume Challenge — a personal portfolio site that doubles as a resume and a way to actually show (not just tell) what I'm learning in cloud, DevOps, networking, and security.
+My personal portfolio site, built for the AWS Cloud Resume Challenge — showing what I'm learning in cloud, DevOps, networking, and security.
 
 The frontend is React, deployed through Netlify, with a live serverless backend on AWS — S3, CloudFront, API Gateway, Lambda, and DynamoDB are all wired up and running the visitor counter.
 
 **Live site:** [ansh-maheshwari.netlify.app](https://ansh-maheshwari.netlify.app/)
 **Repo:** [github.com/AnshMaheshwarii/aws-cloud-resume-challenge](https://github.com/AnshMaheshwarii/aws-cloud-resume-challenge)
 
-> Note: the whole thing was actually built and tested on AWS, but I'm not keeping every resource deployed permanently gotta watch the Free Tier usage. Screenshots of the full infra and the testing are in the repo if you want proof it works.
+> Note: the whole thing was actually built and tested on AWS, but I'm not keeping every resource deployed permanently — gotta watch the Free Tier usage. Screenshots of the full infra and the testing are in the repo if you want proof it works.
 
 ## What's on the site
 
@@ -34,7 +34,7 @@ User
 **Lambda** — backend logic that reads/writes the visitor count
 **DynamoDB** — where the count actually lives
 
-Nothing exotic here it's the classic serverless resume-challenge setup, but I built it myself piece by piece to actually understand how the pieces talk to each other.
+Nothing exotic here — it's the classic serverless resume-challenge setup, but I built it myself piece by piece to actually understand how the pieces talk to each other.
 
 ## Stack
 
